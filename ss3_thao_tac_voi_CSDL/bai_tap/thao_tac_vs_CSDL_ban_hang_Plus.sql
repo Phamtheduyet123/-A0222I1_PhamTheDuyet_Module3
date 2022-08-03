@@ -29,14 +29,9 @@ select c.cName,p.pName
 from customer c join `order` o on c.cID = o.cID
 join orderdetail d on o.oID = d.oID_order
 join product p on d.pID_product = p.pID;
-select c.cName as `Name`
-from customer c join `order` o on c.cID = o.oID
-where c.cID <> o.cID;
+select c.cName
+from customer c left join `order` o on c.cID = o.cID
+where o.oID is null;
 select o.oID,o.oDate,  p.pPrice * d.odQTY as total
 from `order` o join `orderdetail` d on o.oID = d.oID_order
 join product p on d.pID_product = p.pID;
-
-
-
-
-
