@@ -225,37 +225,9 @@ end //
 delimiter ;
 -- câu 24 Tạo Stored Procedure sp_them_moi_hop_dong dùng để thêm mới vào bảng hop_dong với yêu cầu sp_them_moi_hop_dong phải thực hiện kiểm tra tính hợp lệ của dữ liệu bổ sung, với nguyên tắc không được trùng khóa chính và đảm bảo toàn vẹn tham chiếu đến các bảng liên quan.
 delimiter //
-create procedure sp_xoa_khach_hang(in
- h_ma_hop_dong int,
- h_ngay_lam_hop_dong date,
- h_ngay_ket_thuc date ,
- h_tien_dat_coc double,
- h_ma_nhan_vien int,
- h_ma_khach_hang int,
- h_ma_dich_vu int)
+create procedure sp_xoa_khach_hang(in h_ma_hop_dong int, )
 begin
-declare lastId int ;
-select max(ma_hop_dong) into lastId
-from hop_dong;
-if (h_ma_hop_dong <> lastId+1) then
-signal sqlstate '0200' set message_text ='Invalid Id'; 
-elseif (h_ngay_lam_hop_dong is null) then
-signal sqlstate '0200' set message_text ='Invalid ngay_lam_hop_dong';
-elseif( h_ngay_ket_thuc is null) then
-signal sqlstate '0200' set message_text ='Invalid ngay_ket_thuc';
-elseif( h_tien_dat_coc is null) then
-signal sqlstate '0200' set message_text ='Invalid tien_dat_coc';
-elseif(h_ma_nhan_vien not in(select ma_nhan_vien from nhan_vien)) then
-signal sqlstate '0200' set message_text ='Invalid ma_nhan_vien';
-elseif( h_ma_khach_hang not in(select  ma_khach_hang from khach_hang)) then
-signal sqlstate '0200' set message_text ='Invalid ma_khach_hang';
-elseif( h_ma_dich_vu not in(select ma_dich_vu from dich_vu)) then
-signal sqlstate '0200' set message_text ='Invalid ma_dich_vu';
-else  insert into hop_dong(ma_hop_dong,ngay_lam_hop_dong,ngay_ket_thuc, tien_dat_coc,
-ma_nhan_vien,ma_khach_hang,ma_dich_vu)
-values( h_ma_hop_dong,h_ngay_lam_hop_dong,h_ngay_ket_thuc,h_tien_dat_coc,h_ma_nhan_vien,
-h_ma_khach_hang, h_ma_dich_vu) ;
-end if;
+insert into hop_dong
+values() ;
 end //
 delimiter ;
--- câu 25
