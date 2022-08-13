@@ -1,0 +1,20 @@
+*{
+    margin: auto;
+}
+hr{
+    border: none ;
+    height: 1px;
+    background:gray;
+}
+div{
+    width: 50%;
+}
+.acb{
+    text-indent: 50px;
+}
+p{
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+}
