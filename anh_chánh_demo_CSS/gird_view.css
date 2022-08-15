@@ -2,10 +2,6 @@
     padding: 0;
     margin: 0;
 }
-img{
-    width: 30px;
-    height: 30px;
-}
 .row{
     /*để cho các thẻ div nổi lên*/
     display: flex;
@@ -40,6 +36,7 @@ img{
 .contain{
     background: #7abaff;
 }
+@media only screen and (max-width:740px ){
 .col-m-1 {width: 8.33333%;}
 .col-m-2 {width: 16.66667%;}
 .col-m-3 {width: 25%;}
@@ -52,6 +49,7 @@ img{
 .col-m-10 {width: 83.33333%;}
 .col-m-11 {width: 91.66667%;}
 .col-m-12 {width: 100%;}
+}
 /*màn hình điện thoai*/
 @media only screen and (max-width:740px ){
     .col-s-1 {width: 8.33333%;}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /*màn hình điện thoai*/
+        @media only screen and (max-width:740px){
+            .col-s-1 {width: 8.33333%;}
+            .col-s-2 {width: 16.66667%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33333%;}
+            .col-s-5 {width: 41.66667%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33333%;}
+            .col-s-8 {width: 66.66667%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33333%;}
+            .col-s-11 {width: 91.66667%;}
+            .col-s-12 {width: 100%;}
+        }
+
+        /*Màn hinh laptop và máy tính bảng*/
+        @media only screen and (min-width:741px) and (max-width:1240px){
+            .col-m-1 {width: 8.33333%;}
+            .col-m-2 {width: 16.66667%;}
+            .col-m-3 {width: 25%;}
+            .col-m-4 {width: 33.33333%;}
+            .col-m-5 {width: 41.66667%;}
+            .col-m-6 {width: 50%;}
+            .col-m-7 {width: 58.33333%;}
+            .col-m-8 {width: 66.66667%;}
+            .col-m-9 {width: 75%;}
+            .col-m-10 {width: 83.33333%;}
+            .col-m-11 {width: 91.66667%;}
+            .col-m-12 {width: 100%;}
+        }
+
+        /*Màn hình máy tính pc và tivi smart*/
+        @media only screen and (min-width:1241px){
+            .col-l-1 {width: 8.33333%;}
+            .col-l-2 {width: 16.66667%;}
+            .col-l-3 {width: 25%;}
+            .col-l-4 {width: 33.33333%;}
+            .col-l-5 {width: 41.66667%;}
+            .col-l-6 {width: 50%;}
+            .col-l-7 {width: 58.33333%;}
+            .col-l-8 {width: 66.66667%;}
+            .col-l-9 {width: 75%;}
+            .col-l-10 {width: 83.33333%;}
+            .col-l-11 {width: 91.66667%;}
+            .col-l-12 {width: 100%;}
+        }
+
+        .head {
+            background: rgba(58,60,57,0.91);
+            height: 50px;
+            text-align: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            padding-top: 15px;
+
+        }
+
+        .login a, i {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .head .nav:hover, .login:hover {
+            background: black;
+        }
+
+        .content {
+            height: 500px;
+        }
+
+        .sidebar {
+            background: darkgrey;
+        }
+
+        .sidebar li {
+            text-align: center;
+            margin-top: 20px;
+            color: blue;
+        }
+
+        .sidebar div {
+            display: inline-block;
+            width: 80%;
+            height: 70px;
+            text-align: center;
+            border: 1px silver solid;
+            margin: 10% 10%;
+            background: #CCCCCC;
+        }
+
+        .sidebar div p {
+            height: 70px;
+            padding-top: 25px;
+        }
+
+        .middle div{
+            margin: 1% 1%;
+        }
+
+        hr {
+            height: 1px;
+            background: black;
+            margin: 30px 1% 15px 1%;
+        }
+
+        .footer {
+            background: rgba(58,60,57,0.91);
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .footer h5{
+            color: white;
+            display: inline-block;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="row head">
+    <div class="col-m-1 col-l-1 nav">
+        <a href="#">Logo</a>
+    </div>
+    <div class="col-m-1 col-l-1 nav">
+        <a href="#">Home</a>
+    </div>
+    <div class="col-m-1 col-l-1 nav">
+        <a href="#">About</a>
+    </div>
+    <div class="col-m-1 col-l-1 nav">
+        <a href="#">Project</a>
+    </div>
+    <div class="col-m-1 col-l-1 nav">
+        <a href="#">Contact</a>
+    </div>
+    <div class="col-m-6 col-l-6"></div>
+    <div class="col-m-1 col-l-1 login">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        <a href="#">Login</a>
+    </div>
+</div>
+<div class="row content">
+    <div class="col-m-2 col-l-2 sidebar">
+        <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+        </ul>
+    </div>
+    <div class="col-m-8 col-l-8 middle">
+
+        <div class="row">
+            <h1>Welcome</h1>
+        </div>
+        <div class="row">
+            <p>
+                Georginio Wijnaldum arrived in style at AS Roma this week.
+                Having endured a miserable season with Paris Saint-Germain on the back of his Liverpool exit, the
+                Dutch midfielder has decided to jump onboard the exciting project that Jose Mourinho is curating at
+                the Stadio Olimpico.
+                On the back of securing Roma’s first piece of silverware in 14 years in the form of the UEFA Europa
+                Conference League, the ‘Special One’ is now building a squad that’s more than capable of competing
+                for Serie A glory.
+            </p>
+        </div>
+        <hr>
+        <div class="row">
+            <h1>Test</h1>
+        </div>
+        <div class="row">
+            <p>The Romans might have underwhelmed...</p>
+        </div>
+
+    </div>
+    <div class="col-m-2 col-l-2 sidebar">
+        <div class="row">
+            <p>ADS</p>
+        </div>
+        <div class="row">
+            <p>ADS</p>
+        </div>
+    </div>
+</div>
+<div class="row footer">
+    <h5 class="col-l-12 col-m-12">Footer Text</h5>
+</div>
+</body>
+</html>

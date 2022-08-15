@@ -3,51 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../../anh_chánh_demo_CSS/gird_view.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        header{
+            display: flex;
+            width: 100%;
+            position: fixed;
+            background: darkgrey;
+            height: 50px;
+        }
+
+
+        header .div-left {
+            flex: 2;
+            display: flex;
+            align-items: center;
+        }
+
+        header .div-right {
+            flex: 2;
+            position: relative;
+
+        }
+
+        header div .one {
+            position: absolute;
+            right: 95px;
+            top: 15px;
+        }
+
+        header div .two {
+            position: absolute;
+            right: 70px;
+            top: 15px;
+        }
+
+        header div .three {
+            position: absolute;
+            right: 45px;
+            top: 15px;
+        }
+
+        header div .four {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+
+        header nav{
+            flex: 6;
+            text-align: center;
+        }
+
+        header nav ul{
+            list-style: none;
+        }
+
+        header nav ul li{
+            display: inline;
+            margin-right: 80px;
+        }
+
+        main{
+            display: flex;
+            height: 1000px;
+        }
+
+        .right{
+            flex: 3;
+            background: #6c757d;
+        }
+
+        content{
+            flex: 4;
+            background: black;
+        }
+
+        .left{
+            flex: 3;
+            background: #6c757d;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-<div class="row header">
-    <div class="col-m-4">
-        <div class="row">
-        <div class="col-m-2"> <a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"></a>
-       </div>
-        <div class="col-m-6 ">
-            <input class="abc" type="text" name="q" placeholder="Tìm kiếm trên FaceBook">
+<header>
+    <div class="div-left">
+        <div>
+            <img style="width: 50px; height: 55px"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEVKbqj///4+ZqRBaKWer82yv9fR2eY7ZKO/yd5HbKdGa6fl6fFRc6s3YqLT2ufr7vSnttF1jbmMn8Pb4eyks8/4+ftffbCtu9PJ0uKEmb5phLTw8/Zviba4w9lkgbFUdq2VpscwXaB+lb5ICEnlAAADDklEQVR4nO3da2/aMBSA4cQGzAm3QrkVytr1///Iwbqu0hpy8ZLmHOt9+60Skh8ZYhobms2ztEvdR0RERERERERERET0LYmI996F9xYhOOe8L66/zmTosXWQdy7brzfbw/Q4+d3xOL0cDqPN0/q0n4t3lpEiLsw308dzfq/deTaxO4/i/Pqyuov726kYeqRxSdiPG/BuQpNzWCyej414154tzmE4TZr6TM5hUVya+/L8hzlhWDd7/X30Yk24eGjly3NjG/Aija8wHw095HaJPLYF5qZWfJFZa2AupoTtZzDPC0PC0Po1eMvbEYZtDHAXhh5344pTDDA/L4YeeNPER1xlbkIzc+jarvTWhPKyixRaeZa6Vu+2LQqzSKAZoTvECmc2hFLcv9tU09KGsHiKBeZLG9fSuPdrhuZQJHKpuDaxIVxHA43MYcP3M7vV7EurrR969E0Ky3rdcXPK3J/dGfdeuP44E8As1K4V42Jh6O/AkuqAbzaWhLvJjxrgyDiwdr2fmd4jvOVfq4WvNq4mFfmaxcLYXe2S3LgSuDKxpldWI3xMXji1fiWtF7qhB/jf1QgvyQtH5hcLhAgNhBCh/hAi1B9ChPpDiFB/CBHqLy2huK/9rBZuFyWP+UzZnoaclpOvVW8fnkse8dlS2ect/KgSE5OyJ3EPwk3ywnXyz1Jln87rQ5j8HO6TFw5N+qc+hMnPobKTRN0Ld8p2F7sXavs0Qg9CZecYuhdqO4vSvVDbWZTuhdpOsncv1HbOu3vhMfk51HbapnvhQdcfwD0IH5Kfw4fk51DZbZoehE+6bmIgjOgteaG2L1HqXqjsRlQm+2lJ1V8qtCp7yEdjZcDu956UrRV3Smv/sCyECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPXnLpVCG/95u7LibVmVtu/YiakIVSUAJCIiIiIiIiIiIiL61uZDD6Dn5r8ALIw4j4izd7QAAAAASUVORK5CYII="
+                 alt="">
         </div>
-            <div class="col-m-4"></div>
-        </div>
-    </div>
-    <div class="col-m-5">
-        <div class="row">
-            <div class="col-m2 header_mid" ><a href="https://www.facebook.com/">Trang chủ</a></div>
-            <div class="col-m-2 header_mid"> <a href="https://www.facebook.com/watch/?ref=tab/">Video</a></div>
-            <div class="col-m-3 header_mid"> <a href="https://www.facebook.com/marketplace/?ref=app_tab">ThươngTrường</a></div>
-            <div class="col-m-3 header_mid"> <a href="https://www.facebook.com/groups/feed/"> Nhóm</a></div>
+        <div>
+            <input style="width: 180px; height: 45px" type="text" placeholder="Tìm kiếm trên facebook">
         </div>
     </div>
-    <div class="col-m-3">
-        <div class="row">
-        <div class="col-m-2 header_mid" title="Trang chủ">Menu</div>
-        <div class="col-m-2 header_mid">Chat</div>
-        <div class="col-m-4 header_mid">Thông báo</div>
-        <div class="col-m-4 header_mid">Tài Khoản
-        </div>
-        </div>
+    <nav>
+        <ul>
+            <li>
+                <i class="fa-solid fa-house"></i>
+            </li>
+            <li>
+                <i class="fa-brands fa-twitch"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-store"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-people-line"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-layer-group"></i>
+            </li>
+        </ul>
+    </nav>
+    <div class="div-right">
+        <i class="fa-solid fa-bars one"></i>
+        <i class="fa-brands fa-facebook-messenger two"></i>
+        <i class="fa-solid fa-bell three"></i>
+        <i class="fa-solid fa-user four"></i>
     </div>
-</div>
-<div class="row">
-    <div class="col-m-3 view">
-
-    </div>
-    <div class="col-m-6 view ">
-
-    </div>
-    <div class="col-m-3 view">
-
-    </div>
-</div>
-<p title="I'm a tooltip">
-    This is a paragraph.
-</p>
+</header>
+<main>
+    <sidebar class="left"></sidebar>
+    <content></content>
+    <sidebar class="right"></sidebar>
+</main>
 </body>
 </html>

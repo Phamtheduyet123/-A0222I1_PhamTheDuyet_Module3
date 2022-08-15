@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../anh_chánh_demo_CSS/gird_view.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            padding: 6px;
+          width: 99%;
+        }
+        h2,h4{
+            padding: 10px;
+        }
+        div p{
+            text-align: center;
+        }
+        div{
+            box-sizing: border-box;
+        }
+        .xyz{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+<h2> Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+<div class="row">
+    <div class="col-s-6 col-m-3 ">
+        <a target="_blank" href="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg"><img
+                src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" ></a>
+        <p>Add a description of the image here</p>
+    </div>
+
+    <div class="col-s-6 col-m-3">
+        <a target="_blank" href="https://demo.codegym.vn/web/15/gallery/img_forest.jpg"><img
+                src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" ></a>
+        <p>Add a description of the image here</p>
+    </div>
+
+    <div class=" col-s-6 col-m-3">
+        <a target="_blank" href="https://demo.codegym.vn/web/15/gallery/img_lights.jpg"><img
+                src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" ></a>
+        <p>Add a description of the image here</p>
+    </div>
+
+    <div class=" col-s-6 col-m-3">
+        <a target="_blank" href="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg"><img
+                src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg"></a>
+        <p>Add a description of the image here</p>
+    </div>
+</div>
+<div style="padding: 6px">
+    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+</div>
+</body>
+</html>
